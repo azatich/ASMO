@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/style/page1.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <nav class="nav flex-column">
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#citiesMenu" aria-expanded="false">
+                <img src="../public/images/city-icon.png" alt="city-icon"> Города
+            </a>
+            <div class="collapse" id="citiesMenu">
+                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#astanaOrgs" aria-expanded="false">
+                    <img src="../public/images/city-icon.png" alt="city-icon"> Астана
+                </a>
+                <div class="collapse" id="astanaOrgs">
+                    <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#org1Branches" aria-expanded="false">
+                        <img src="../public/images/organizatin-icon.png" alt="city-icon"> Организация 1
+                    </a>
+                    <div class="collapse" id="org1Branches">
+                        <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#branch1Depts" aria-expanded="false">
+                            <img src="../public/images/branch-icon.png" alt="city-icon"> Филиал 1
+                        </a>
+                        <div class="collapse" id="branch1Depts">
+                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"> Отдел 1</a>
+                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"> Отдел 2</a>
+                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"> Отдел 3</a>
+                        </div>
+                        <!-- Repeat for other branches -->
+                    </div>
+                    <div class="collapse" id="org1Branches">
+                        <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#branch2Depts" aria-expanded="false">
+                            <img src="../public/images/branch-icon.png" alt="city-icon"> Филиал 2
+                        </a>
+                        <div class="collapse" id="branch2Depts">
+                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"> Отдел 1</a>
+                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"> Отдел 2</a>
+                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"> Отдел 3</a>
+                        </div>
+                        <!-- Repeat for other branches -->
+                    </div>
+                    <div class="collapse" id="org1Branches">
+                        <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#branch3Depts" aria-expanded="false">
+                            <img src="../public/images/branch-icon.png" alt="city-icon"> Филиал 3
+                        </a>
+                        <div class="collapse" id="branch3Depts">
+                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"> Отдел 1</a>
+                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"> Отдел 2</a>
+                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"> Отдел 3</a>
+                        </div>
+                        <!-- Repeat for other branches -->
+                    </div>
+                    <!-- Repeat for other organizations -->
+                </div>
+                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#astanaOrgs" aria-expanded="false">
+                    <img src="../public/images/city-icon.png" alt="city-icon"> Алматы
+                </a>
+                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#astanaOrgs" aria-expanded="false">
+                    <img src="../public/images/city-icon.png" alt="city-icon"> Шымкент
+                </a>
+                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#astanaOrgs" aria-expanded="false">
+                    <img src="../public/images/city-icon.png" alt="city-icon"> Атырау
+                </a>
+                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#astanaOrgs" aria-expanded="false">
+                    <img src="../public/images/city-icon.png" alt="city-icon"> Актау
+                </a>
+                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#astanaOrgs" aria-expanded="false">
+                    <img src="../public/images/city-icon.png" alt="city-icon"> Тараз
+                </a>
+                
+            </div>
+            <!-- Repeat for other cities and their respective organizations, branches, and departments -->
+        </nav>
+    </aside>
+    
+
+    <div class="content">
+
+        <header>
+            <div class="search-container">
+                <input type="search" class="search-box" placeholder="Поиск">
+            </div>
+        </header>
+
+        <main class="main-content">  
+            <button class="return-menu-btn">Вернуться в меню</button>
+            <div class="cards-container">
+                <div class="card">
+                    <img class="profile-img" src="/public/images/sherlock.png" alt="sherlock">
+                    <h1 class="name">Sherlock Holmes</h1>
+                    <p class="location">London, Britain</p>
+                    <div class="emp-id-spot">
+                            <span class="emp-info-title">ID</span>
+                        <div class="emp-id-number">
+                            <span class="emp-info-content">123456789</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="col">
+                            <div>
+                                <p class="emp-info-title">Должность</p>
+                                <p class="emp-info-content">Детектив</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <p class="emp-info-title">Организация</p>
+                                <p class="emp-info-content">AVR Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat first">
+                        <img src="/public/images/temperature.png" alt="temperature">
+                        <div class="info">
+                            <p class="label">Температура</p>
+                            <p class="value">36,6</p>
+                        </div>
+                    </div>
+                    <div class="stat first">
+                        <img src="/public/images/pulse.png" alt="pulse">
+                        <div class="info">
+                            <p class="label">Пульс</p>
+                            <p class="value">80</p>
+                        </div>
+                    </div>
+                    <div class="stat first">
+                        <div class="icon pressure-icon"></div>
+                        <div class="info">
+                            <p class="label">Давление</p>
+                            <p class="value">90/60</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat second">
+                        <img src="/public/images/alcometer.png" alt="temperature">
+                        <div class="info">
+                            <p class="label">Алкометр</p>
+                            <p class="value">1</p>
+                        </div>
+                    </div>
+                    <div class="stat second">
+                        <img src="/public/images/narcometer.png" alt="pulse">
+                        <div class="info">
+                            <p class="label">Наркометр</p>
+                            <p class="value">1</p>
+                        </div>
+                    </div>
+                    <div class="stat second complaint">
+                        <div class="info complaint">
+                            <p class="label">Жалобы</p>
+                            <p class="value">Да</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-container">
+                <div class="photos-holder">
+                    <div class="photomaterials-container">
+                        <h2>Фотоматериалы</h2>
+                        <p>Фото 1</p>
+                        <p>Фото 2</p>
+                        <p>Фото 3</p>
+                        <button>Смотреть полностью</button>
+                    </div>
+                    <div class="photos">
+                        <img src="../public/images/photomaterial.png" alt="">
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat third">
+                        <p class="label">Подпись Работника</p>
+                        <div class="info">
+                            <img src="../public/images/emp-sign.png" alt="emp-sign">
+                        </div>
+                    </div>
+                    <div class="stat third">
+                        <p class="label">Подпись медработника</p>
+                        <div class="info">
+                            <img src="../public/images/emp-sign.png" alt="med-sign">
+                        </div>
+                    </div>
+                    <div class="stat third complaint">
+                        <div class="info complaint">
+                            <p class="label">Статус</p>
+                            <p class="value">Допускается</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
