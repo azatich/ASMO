@@ -15,12 +15,20 @@ body {
 }
 
 .sidebar {
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
     width: 250px; 
-    overflow-y: auto; 
+    overflow-y: auto;
     padding: 15px;
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
 }
-
+.sidebar-nav {
+    flex-grow: 1;
+}
+.sidebar span {
+    font-size: 15px;
+}
 .nav-link {
     color: #495057;
     padding: 10px 15px;
@@ -60,7 +68,6 @@ body {
     padding-left: 90px;
 }
 
-
 .bi {
     font-size: 1.2em; 
     margin-right: 10px; 
@@ -74,8 +81,24 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
-
-
+.btn-exit {
+    background-color: #ffffff; 
+    color: #495057;
+    border: none; 
+    padding: 10px 15px; 
+    text-align: left;
+    border-radius: 4px;
+    width: 100%; 
+    box-shadow: none; 
+    margin-top: auto;
+}
+.btn-exit:hover {
+    background-color: #e9ecef;
+}
+.btn-exit img,
+.sidebar img {
+    margin-right: 8px;
+}
 header {
     display: flex;
     justify-content: flex-end;
