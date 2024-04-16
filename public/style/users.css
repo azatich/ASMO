@@ -1,0 +1,118 @@
+@import url(../style/main.css);
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; 
+    overflow: hidden;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #F7F9FC;
+}
+.table-responsive {
+    height: calc(100vh - (header height));
+    overflow-y: auto; 
+}
+.main-content {
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    margin-bottom: 0;
+}
+header {
+    padding: 20px;
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.search-container span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2B3674;
+}
+
+.search-box {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 7px 25px 7px 55px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.search-box::placeholder {
+    color: #ccc;
+}
+
+.search-box::before {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ccc;
+}
+.table-search img {
+    width: 42px;
+    height: 38px;
+    margin-right: 14px;
+}
+
+.table-search-box {
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 25px 5px 55px;
+    margin: 0;
+    font-size: 16px;
+    outline: none;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table {
+    margin-bottom: 0; 
+}
+
+th, td {
+    white-space: nowrap; 
+}
+.table thead th {
+    background-color: transparent;
+    border-bottom: 2px solid #dee2e6; 
+}
+
+.table td.arrow-column {
+    width: 20px;
+}
+.table .name {
+    color: #5843ed;
+    font-weight:600;
+}
+
+.table .admitted {
+    color: green;
+    font-weight: bold;
+}
+.table .not-admitted {
+    color: red;
+    font-weight: bold;
+}
+.table .title {
+    color: #5A6376
+}
+.table .title.all {
+    color: #5843ed;
+}

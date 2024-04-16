@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import url(../style/main.css);
 
 body {
     font-family: 'Arial', sans-serif;
@@ -14,91 +10,6 @@ body {
     margin: 0;
 }
 
-.sidebar {
-    background-color: #f8f9fa;
-    width: 250px; 
-    overflow-y: auto;
-    padding: 15px;
-    display: flex;
-    flex-direction: column; 
-    height: 100vh;
-}
-.sidebar-nav {
-    flex-grow: 1;
-}
-.sidebar span {
-    font-size: 15px;
-}
-.nav-link {
-    color: #495057;
-    padding: 10px 15px;
-    text-decoration: none; 
-    display: flex; 
-    align-items: center; 
-    border-radius: 4px; 
-}
-
-.nav-link:hover {
-    background-color: #e9ecef; 
-}
-
-.nav-link.collapsed::after {
-    content: '\25bc'; 
-    margin-left: auto; 
-}
-
-.nav-link:not(.collapsed)::after {
-    content: '\25b2';
-    margin-left: auto;
-}
-
-.nav .collapse .nav-link {
-    padding-left: 30px;
-}
-
-.nav .collapse .collapse .nav-link { 
-    padding-left: 45px;
-}
-
-.nav .collapse .collapse .collapse .nav-link { 
-    padding-left: 60px;
-}
-
-.nav .collapse .collapse .collapse .collapse .nav-link { 
-    padding-left: 90px;
-}
-
-.bi {
-    font-size: 1.2em; 
-    margin-right: 10px; 
-}
-
-.bi-building,
-.bi-geo-alt-fill,
-.bi-diagram-3-fill,
-.bi-house-door-fill,
-.bi-person-lines-fill {
-    display: inline-block;
-    vertical-align: middle;
-}
-.btn-exit {
-    background-color: #ffffff; 
-    color: #495057;
-    border: none; 
-    padding: 10px 15px; 
-    text-align: left;
-    border-radius: 4px;
-    width: 100%; 
-    box-shadow: none; 
-    margin-top: auto;
-}
-.btn-exit:hover {
-    background-color: #e9ecef;
-}
-.btn-exit img,
-.sidebar img {
-    margin-right: 8px;
-}
 header {
     display: flex;
     justify-content: flex-end;
@@ -142,7 +53,7 @@ header {
 .content {
     flex-grow: 1;
     padding: 20px;
-    background-color: #dbdfe8;
+    background-color: #F7F9FC;
 }
 
 .main-content {
