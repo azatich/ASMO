@@ -1,59 +1,89 @@
 @import url(../style/main.css);
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 100%; 
+    max-height: calc(100% - 100px); 
     margin: 0;
+    background-color: #F7F9FC;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 20px;
     background: transparent;
 }
 
-.search-container {
+.search-container, .settings, .avatar {
     display: flex;
     position: relative;
+    align-items: center;
+    width: fit-content; 
 }
 
 .search-box {
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    padding: 7px 25px 7px 55px;
+    border-radius: 40px;
+    padding: 12px 45px 12px 45px; 
     font-size: 16px;
+    background-color: #F5F7FA;
+    outline: none;
+    width: 100%;
+    border: none;
     outline: none;
 }
 
-.search-box::placeholder {
-    color: #ccc;
-}
-
-.search-box::before {
+.bi {
     position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #ccc;
+    left: 20px;
+    fill: #718EBF; 
 }
 
+.search-box::placeholder {
+    color: #8BA3CB;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #F5F7FA;
+    margin-left: 30px;
+}
+.settings svg {
+    width: 24px;
+    height: 24px;
+    fill: #718EBF; 
+}
+.avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
 
 .sidebar {
     width: 250px;
     background-color: #ffffff;
-    padding: 20px;
+    height: calc(100vh - 100px);
 }
 
 .content {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: #F7F9FC;
+    width: 100%; /* Ensures the content uses all available width in the main */
+    height: 100%; /* Fills the height available */
+    overflow: auto; /* Enables scrolling within the content if needed */
 }
 
 .main-content {
