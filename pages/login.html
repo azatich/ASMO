@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../public/style/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Добро пожаловать!</h1>
+        <p class="login-intro">Введите ваши данные для авторизации</p>
+        
+        <form class="login-form">
+            <label for="username">Логин</label>
+            <input type="text" id="username">
+    
+            <label class="password" for="password">Пароль</label>
+            <input type="password" id="password">
+    
+            <div class="remember-me-container">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Запомнить меня</label>
+            </div>
+    
+            <button type="submit" class="login-button"><span class="login">Войти</span></button>
+    
+            <div class="login-links">
+                <a class="registration" href="#">Регистрация</a>
+                <a class="forgot-pass" href="#">Забыли пароль?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

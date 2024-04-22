@@ -1,16 +1,5 @@
-@import url(../style/main.css);
+@import url(../style/common.css);
 
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: row;
-    height: 100vh; 
-    overflow: hidden;
-}
 .content {
     flex-grow: 1;
     padding: 20px;
@@ -28,56 +17,29 @@ body {
 .table {
     margin-bottom: 0;
 }
-header {
-    padding: 20px;
-}
-.search-container {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-.search-container span {
-    font-size: 25px;
-    font-weight: bold;
-    color: #2B3674;
-}
-
-.search-box {
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    padding: 7px 25px 7px 55px;
-    font-size: 16px;
-    outline: none;
-    border: none;
-}
-
-.search-box::placeholder {
-    color: #ccc;
-}
-
-.search-box::before {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #ccc;
-}
-.table-search img {
-    width: 42px;
-    height: 38px;
-    margin-right: 14px;
-}
 
 .table-search-box {
-    border: 2px solid #ccc;
-    border-radius: 3px;
-    padding: 5px 25px 5px 55px;
-    margin: 0;
-    font-size: 16px;
-    outline: none;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: fit-content; 
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 5px 0 5px 0;
 }
-
+.table-search-box input {
+    border: none;
+}
+.table-search-box .filter,
+.table-search-box .search-icon {
+    margin: 0 10px 0;
+}
+.table-search-box .word-all,
+.table-search-box .down-arrow,
+.table-search-box .shortcut-icon {
+    margin: 0 10px 0 0;
+}
 .table-responsive {
     margin-top: 20px;
 }

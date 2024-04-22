@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d9e0e6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    color: #624BFF;
+    margin-top: 0;
+    white-space: nowrap;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.login-intro {
+    margin-bottom: 40px;
+    color: #475569;
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    text-align: left;
+    color: #333;
+    margin-bottom: 4px;
+}
+.email, .password, .username, .confirm-pass {
+    font-weight: 500;
+}
+.login-form input {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.login-form input:focus {
+    border-color: #624BFF;
+}
+
+.remember-me-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.remember-me-container #remember-me {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 0 0;
+}
+.remember-me-container label {
+    margin: 0;
+    font-size: 15px;
+}
+.remember-me-container span {
+    color: #624BFF;
+    font-weight: 600;
+}
+.reg-button {
+    background-color: #624BFF;
+    color: #fff;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.reg-button span {
+    font-weight: 500;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+.login-links a {
+    color: #000;
+    text-decoration: none;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.login-links .registration {
+    color: #624BFF;
+}
