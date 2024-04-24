@@ -2,23 +2,27 @@
 
 .content {
     flex-grow: 1;
-    padding: 20px;
-    background-color: #F7F9FC;
+    padding: 35px;
+    height: calc(100vh - 100px);
+}
+.welcome {
+    margin: 10px 0 50px 0;
+    color: #2B3674;
+    font-weight: 700;
 }
 .table-responsive {
-    height: calc(100vh - (header height));
     overflow-y: auto; 
 }
-.main-content {
-    margin: 0;
-    padding: 0;
-}
-
 .table {
     margin-bottom: 0;
 }
-
-.table-search-box {
+.table-search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.table-search-box,
+.filter-box {
     background-color: #fff;
     display: flex;
     position: relative;
@@ -28,17 +32,34 @@
     border-radius: 7px;
     padding: 5px 0 5px 0;
 }
+.filter-box {
+    margin-right: 30px;
+}
+.calendar-btn-box {
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: fit-content; 
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 9px 13px;
+    margin-left: 15px;
+    margin-right: 18px;
+}
 .table-search-box input {
     border: none;
 }
-.table-search-box .filter,
+.filter-box .filter,
 .table-search-box .search-icon {
     margin: 0 10px 0;
 }
 .table-search-box .word-all,
-.table-search-box .down-arrow,
 .table-search-box .shortcut-icon {
     margin: 0 10px 0 0;
+}
+.filter-box .down-arrow {
+    margin: 0 10px 0 10px;
 }
 .table-responsive {
     margin-top: 20px;
@@ -56,8 +77,9 @@ th, td {
     border-bottom: 2px solid #dee2e6; 
 }
 
-.table td.arrow-column {
-    width: 20px;
+.arrow-right-th, 
+.arrow-column {
+    max-width: 30px;
 }
 .table .name {
     color: #5843ed;
@@ -65,16 +87,56 @@ th, td {
 }
 
 .table .admitted {
-    color: green;
-    font-weight: bold;
+    color: #14804A;
+    font-weight: 600;
+}
+.admitted span {
+    padding: 0 10px 5px 10px;
+    border-radius: 7px;
+    background-color: #E1FCEF;
 }
 .table .not-admitted {
     color: red;
-    font-weight: bold;
+    font-weight: 600;
+}
+.not-admitted span {
+    padding: 0 10px 5px 10px;
+    border-radius: 7px;
+    background-color: #FFEDEF;
 }
 .table .title {
     color: #5A6376
 }
-.table .title.all {
+.table .title span {
+    display: flex;
+    align-items: center;
+}
+.all {
+    width: 100px;
     color: #5843ed;
+}
+.all span {
+    background-color: #EDEDFC;
+    padding: 1px 8px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+.allowed {
+    width: 150px;
+}
+.allowed, .not-allowed {
+    color: #464F60;
+}
+.allowed span,
+.not-allowed span {
+    background-color: #E9EDF5;
+    padding: 0 8px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+.checkbox-row {
+    width: 20px;
+}
+.status-svg {
+    margin-left: 5px;
 }

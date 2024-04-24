@@ -81,17 +81,21 @@ header {
 
 .sidebar {
     background-color: #fff;
-    width: 250px; 
+    width: 300px; 
     overflow-y: auto;
     padding: 15px;
     display: flex;
     flex-direction: column; 
     height: calc(100vh - 100px);
 }
+.sidebar a {
+    text-decoration: none;
+}
 .sidebar-nav {
     flex-grow: 1;
 }
 .sidebar span {
+    color: #A3AED0;
     font-size: 15px;
 }
 .nav-link {
@@ -106,30 +110,26 @@ header {
 .nav-link:hover {
     background-color: #e9ecef; 
 }
-
-.nav-link.collapsed::after {
-    content: '\25bc'; 
-    margin-left: auto; 
+.collapsed {
+    display: flex;
+    align-items: center;
 }
-
-.nav-link:not(.collapsed)::after {
-    content: '\25b2';
-    margin-left: auto;
+.collapsed svg {
+    margin-right: 20px;
 }
-
-.nav .collapse .nav-link {
+.nav .collapse {
     padding-left: 30px;
 }
 
-.nav .collapse .collapse .nav-link { 
+.nav .collapse .collapse { 
     padding-left: 45px;
 }
 
-.nav .collapse .collapse .collapse .nav-link { 
+.nav .collapse .collapse .collapse { 
     padding-left: 60px;
 }
 
-.nav .collapse .collapse .collapse .collapse .nav-link { 
+.nav .collapse .collapse .collapse .collapse { 
     padding-left: 90px;
 }
 
