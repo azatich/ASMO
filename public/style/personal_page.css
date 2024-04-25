@@ -1,14 +1,14 @@
 @import url(../style/common.css);
 
 .content {
-    width: 100%; /* Ensures the content uses all available width in the main */
-    height: 100%; /* Fills the height available */
-    overflow: auto; /* Enables scrolling within the content if needed */
+    width: 100%;
+    height: 100vh;
 }
 
 .main-content {
     display: grid;
     justify-content: center;
+    margin-top: 15px;
     grid-gap: 15px;
 }
 .cards-container {
@@ -23,8 +23,9 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 230px;
-    height: 272px;
+    border: none;
+    width: 260px;
+    height: 230px;
     text-align: center;
     padding: 60px 15px 15px;
     position: relative;
@@ -45,7 +46,7 @@
 }
 
 .card .name {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: bold;
 }
   
@@ -61,27 +62,27 @@
 }
 
 .name {
-    margin-top: 60px;
+    margin-top: 50px;
     color: rgb(62,73,115);
 }
 
 .location {
     color: rgba(191,199,223,255);
-    font-size: 0.9em;
+    font-size: 13px;
     margin: 0;
 }
 .details {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-    margin-top: 10px;
+    padding: 0 10px;
+    margin-top: 17px;
 }
 .col {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    margin-right: 15px;
 }
 .emp-info-title {
     margin: 0;
@@ -93,11 +94,11 @@
     font-size: 15px;
     color: rgb(62,73,115);
     margin: 0;
-
+    text-wrap: nowrap;
 }
 .stats {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 13px;
 }
 .stat {
     width: 220px;
@@ -108,7 +109,6 @@
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px 10px;
-    margin: 0;
 }
 .stat.first {
     width: 250px;
@@ -120,8 +120,8 @@
     width: 256px;
 }
 .stat img {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
 .stats .label,
@@ -130,10 +130,11 @@
     margin: 0; 
 }
 .stats .label {
+    font-size: 12px;
     color: rgba(191,199,223,255);
 }
 .stats .value {
-    font-size: 22px;
+    font-size: 17px;
     color: rgb(62,73,115);
     font-weight: bold;
 }
@@ -150,12 +151,14 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
 }
-
+.photos-holder img {
+    width: 200px;
+    height: 200px;
+}
 .photomaterials-container {
+    height: 230px;
     padding: 20px;
-    border-right: 2px solid #eee; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -197,10 +200,4 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
-}
-
-.photos img {
-    width: 230px;
-    height: auto; 
-    border-radius: 17px;
 }

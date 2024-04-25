@@ -14,7 +14,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: calc(100% - 100px); 
     margin: 0;
     background-color: #F7F9FC;
 }
@@ -23,8 +22,9 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     background: transparent;
+    background-color: #fff;
 }
 
 .search-container, .settings, .avatar {
@@ -36,7 +36,7 @@ header {
 
 .search-box {
     border-radius: 40px;
-    padding: 12px 45px 12px 45px; 
+    padding: 9px 45px 9px 45px; 
     font-size: 16px;
     background-color: #F5F7FA;
     outline: none;
@@ -59,21 +59,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     padding: 10px;
     background-color: #F5F7FA;
     margin-left: 30px;
 }
 .settings svg {
-    width: 24px;
-    height: 24px;
+    width: 21px;
+    height: 21px;
     fill: #718EBF; 
 }
 .avatar img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-left: 30px;
     margin-right: 40px;
@@ -86,7 +86,7 @@ header {
     padding: 15px;
     display: flex;
     flex-direction: column; 
-    height: calc(100vh - 100px);
+    height: 100vh;
 }
 .sidebar a {
     text-decoration: none;
@@ -118,19 +118,19 @@ header {
     margin-right: 20px;
 }
 .nav .collapse {
-    padding-left: 30px;
+    padding-left: 15px;
 }
 
 .nav .collapse .collapse { 
-    padding-left: 45px;
+    padding-left: 30px;
 }
 
 .nav .collapse .collapse .collapse { 
-    padding-left: 60px;
+    padding-left: 45px;
 }
 
 .nav .collapse .collapse .collapse .collapse { 
-    padding-left: 90px;
+    padding-left: 55px;
 }
 
 .bi {
