@@ -54,22 +54,34 @@ header {
 .search-box::placeholder {
     color: #8BA3CB;
 }
-
-.settings {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: #F5F7FA;
-    margin-left: 30px;
+.avatar {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
-.settings svg {
-    width: 21px;
-    height: 21px;
-    fill: #718EBF; 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+}
+
+.dropdown-menu button {
+    color: #A3AED0;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+    background-color: #f1f1f1;
 }
 .avatar img {
     width: 50px;
@@ -100,7 +112,7 @@ header {
 }
 .nav-link {
     color: #495057;
-    padding: 10px 15px;
+    padding: 10px 0px;
     text-decoration: none; 
     display: flex; 
     align-items: center; 
@@ -122,15 +134,11 @@ header {
 }
 
 .nav .collapse .collapse { 
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .nav .collapse .collapse .collapse { 
-    padding-left: 45px;
-}
-
-.nav .collapse .collapse .collapse .collapse { 
-    padding-left: 55px;
+    padding-left: 25px;
 }
 
 .bi {
