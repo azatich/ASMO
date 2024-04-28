@@ -168,8 +168,8 @@
 #filterLabel {
     padding: 0 10px 0 0;
 }
-.allowed {
-    width: 140px;
+.all, .allowed, .not-allowed {
+    padding-right: 20px;
 }
 .selected-users span {
     color: #5843ed;
