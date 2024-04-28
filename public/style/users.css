@@ -30,7 +30,6 @@
     padding: 5px 0 5px 0;
 }
 .filter-box {
-    width: 80px;
     margin-right: 20px;
 }
 .calendar-btn-box {
@@ -166,8 +165,8 @@
 .all, .all span, .allowed, .not-allowed {
     font-size: 15px;
 }
-.all {
-    width: 60px;
+#filterLabel {
+    padding: 0 10px 0 0;
 }
 .allowed {
     width: 140px;
