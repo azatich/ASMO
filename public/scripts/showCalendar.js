@@ -3,7 +3,8 @@ $(document).ready(function() {
         showOn: "button",
         buttonImage: "../public/images/calendar.png",
         buttonImageOnly: true,
-        buttonText: "Select date"
+        buttonText: "Select date",
+        firstDay: 1
     });
 
     $('.calendar-btn-box img').click(function() {
