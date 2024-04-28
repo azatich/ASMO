@@ -1,31 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const filterLinks = document.querySelectorAll('.dropdown-item');
-    filterLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const filter = this.getAttribute('data-filter');
-            filterRows(filter);
-        });
-    });
-
-    function filterRows(filter) {
-        const rows = document.querySelectorAll('.table tbody tr');
-        rows.forEach(row => {
-            const statusCell = row.querySelector('.status');
-            if (filter === 'all') {
-                row.style.display = '';
-            } else if (filter === 'admitted' && statusCell.classList.contains('admitted')) {
-                row.style.display = '';
-            } else if (filter === 'not-admitted' && statusCell.classList.contains('not-admitted')) {
-                row.style.display = '';
-            } else {
-                row.style.display = 'none';
-            }
-        });
-    }
-});
-
-document.addEventListener("DOMContentLoaded", function() {
     updateCounts();
     setupDropdownListeners();
 
@@ -41,12 +14,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function setupDropdownListeners() {
         const filterLinks = document.querySelectorAll('.dropdown-item');
+        const filterLabel = document.getElementById('filterLabel');
+
         filterLinks.forEach(link => {
             link.addEventListener('click', function(event) {
                 event.preventDefault();
                 const filter = this.getAttribute('data-filter');
+                const filterText = this.textContent.trim();
+
                 filterRows(filter);
                 updateHeaderClass(filter);
+                filterLabel.textContent = filterText;
             });
         });
     }
@@ -89,5 +67,3 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
-
-
