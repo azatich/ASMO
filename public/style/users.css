@@ -28,6 +28,7 @@
     border: 1px solid #ccc;
     border-radius: 7px;
     padding: 5px 0 5px 0;
+    cursor: pointer;
 }
 .filter-box {
     margin-right: 20px;
@@ -227,5 +228,19 @@ tfoot .arrow-down {
     background-color: transparent !important;
     border: none !important; 
     border-bottom: none !important; 
+}
+.calendar-btn-box {
+    padding: 8px;
+    cursor: pointer;
+}
+.calendar-btn-box button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+.calendar-btn-box button svg {
+    width: 18px;
+    height: 18px;
 }
 

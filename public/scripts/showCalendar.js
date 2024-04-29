@@ -1,13 +1,11 @@
 $(document).ready(function() {
     $("#datepicker").datepicker({
-        showOn: "button",
-        buttonImage: "../public/images/calendar.png",
-        buttonImageOnly: true,
-        buttonText: "Select date",
-        firstDay: 1
+        firstDay: 1,
+        beforeShow: function() {
+        }
     });
 
-    $('.calendar-btn-box img').click(function() {
+    $('#datepicker-button').click(function() {
         $("#datepicker").datepicker("show");
     });
 });
