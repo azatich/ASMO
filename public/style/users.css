@@ -101,7 +101,7 @@
     white-space: nowrap;
 }
 .table .emp-position {
-    max-width: 220px;
+    min-width: 200px;
     white-space: normal;
     word-wrap: break-word;
     width: auto;
@@ -131,6 +131,11 @@
 .table .emp-position {
     font-size: 14px;
     font-weight: 500;
+}
+.table .company-name {
+    word-wrap: break-word;  
+    white-space: normal;
+    min-width: 200px;
 }
 .table .date {
     font-size: 15px;
