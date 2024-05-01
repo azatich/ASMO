@@ -4,12 +4,6 @@
     padding: 0;
 }
 
-html, body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -134,14 +128,21 @@ header {
     font-size: 15px;
 }
 .nav-link {
+    position: relative;
     color: #495057;
     padding: 10px 0px;
     text-decoration: none; 
     display: flex; 
-    align-items: center; 
+    align-items: flex-start;
     border-radius: 4px; 
+    padding-left: 40px;
+    transition: all 0.3s ease;
 }
-
+.nav-link img {
+    position: absolute;
+    top: 10px; 
+    left: 0; 
+}
 .nav-link:hover {
     background-color: #e9ecef; 
 }

@@ -12,7 +12,8 @@
     font-size: 32px;
 }
 .table-responsive {
-    margin: 0 35px; 
+    margin: 0 0 0 40px; 
+    background-color: #F7F9FC;
 }
 .table-search {
     display: flex;
@@ -99,15 +100,19 @@
     padding: 5px 10px;
     white-space: nowrap;
 }
-.table th:nth-child(2), 
-.table td:nth-child(2) {
-    width: 50px;
+.table .emp-position {
+    max-width: 220px;
+    white-space: normal;
+    word-wrap: break-word;
+    width: auto;
+    overflow: hidden;
+}
+.table .name {
+    max-width: 200px;
+    word-wrap: break-word;  
+    white-space: normal;
 }
 
-.table th:nth-child(3), 
-.table td:nth-child(3) {
-    width: 100px;
-}
 .table thead th {
     background-color: transparent;
     border-bottom: 2px solid #dee2e6; 
