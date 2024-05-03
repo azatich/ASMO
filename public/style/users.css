@@ -4,6 +4,20 @@
     width: 100%;
     height: 100vh;
 }
+.go-to-main {
+    background-color: #fff;
+    border: none;
+    width: 150px;
+    padding: 13px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 15px 0 0 20px;
+}
+.go-to-main a {
+    text-decoration: none;
+    color: #5843ed;
+    font-weight: 600;
+}
 .welcome {
     margin: 20px 100px 80px;
     width: auto;
@@ -96,7 +110,10 @@
     margin-top: 20px;
 }
 .table {
-    max-width: 70%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
     max-height: 500px;
     overflow: auto;
 }
@@ -136,6 +153,15 @@
     color: #5843ed;
     font-size: 15px;
     font-weight: 600;
+}
+.table .mobile-company-name,
+.table .mobile-emp-position {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+.table .mobile-emp-position {
+    color: #0c9242;
 }
 .table .company-name,
 .table .emp-position {
@@ -264,3 +290,39 @@ tfoot .arrow-down {
     height: 18px;
 }
 
+.mobile-company-name,
+.mobile-emp-position {
+    display: none;
+}
+@media (max-width: 992px) {
+    .navbar-sidebar {
+        display: block;
+    }
+    .sidebar, .company-name, .emp-position, .emp-comp-name-title, .emp-position-title {
+        display: none;
+    }
+    .mobile-company-name, .mobile-emp-position {
+        display: block;
+    }
+    .table {
+        width: 90%; 
+        margin-left: auto;
+        margin-right: auto;
+        font-size: smaller; 
+    }
+    .table .name {
+        max-width: 700px;
+        min-width: 500px;
+        word-wrap: normal;  
+        white-space: normal;
+    }
+    
+}
+@media (max-width: 768px) {
+    .table .name {
+        max-width: 700px;
+        min-width: 320px;
+        word-wrap: normal;  
+        white-space: normal;
+    }
+}
