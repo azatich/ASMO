@@ -1,0 +1,132 @@
+@media (max-width: 992px) {
+    .card {
+        min-width: 200px;
+        min-height: 170px;
+    }
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+    .emp-info-title {
+        font-size: 10px;
+    }
+    .emp-info-content {
+        font-size: 12px;  
+        max-width: 200px;
+    }
+    .emp-info-title.position {
+        max-width: 150px;
+        width: auto;
+    }
+    .stats {
+        margin-left: 2px;
+        grid-gap: 10px; 
+    }
+    .stat {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        height: 60px; 
+        width: 200px;
+    }
+    .stat.first img,
+    .stat.second img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .photomaterials-container {
+        height: 200px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .photomaterials-container button {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+    .photomaterials-container h2 {
+        font-size: 20px;
+    }
+    .photos-holder img {
+        width: 170px;
+        height: 170px;
+    }
+    .splide li {
+        display: flex;
+        justify-content: center;
+    }
+    .splide {
+        width: 190px;
+    }
+    .stat.third {
+        width: 185  px;
+        height: 65px;
+    }
+}
+  
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .navbar-sidebar {
+        display: block;
+    }
+    .return-menu-btn {
+        padding: 7px 16px;
+        font-size: 12px;
+    }
+    .row.first {
+        display: flex;
+        justify-content: center;
+    }
+    .row.first .stats {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .photos-holder {
+        width: 500px;
+    }
+    .stats-2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 15px;   
+    }
+    .stat.third {
+        width: 150px;
+    }
+    .stat.stat.third.med-sign {
+        width: 165px;
+    }
+    .stat.third.med-sign .label {
+        width: 80px;
+    }
+    .stat.third.worker-sign img {
+        width: 60px;
+        height: 35px;
+    }
+    .stat.third.med-sign .info span {
+        display: inline-block; 
+        width: 50px; 
+        white-space: normal;
+        font-size: 10px
+    }
+    .stat.third .label {
+        font-size: 10px;
+    }
+    .stat.third .value {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

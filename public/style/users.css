@@ -17,11 +17,11 @@
     min-width: 250px;
 }
 .table-responsive {
-    margin: 0 0 0 40px; 
     background-color: #F7F9FC;
 }
 .table-search {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 25px;
 }
@@ -99,6 +99,11 @@
     max-width: 70%;
     max-height: 500px;
     overflow: auto;
+}
+.header-table, 
+.table {
+    margin-left: auto;
+    margin-right: auto;
 }
 .table th,
 .table td {

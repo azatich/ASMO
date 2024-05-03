@@ -4,13 +4,16 @@ html, body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: #F7F9FC;
 }
 
+.navbar-sidebar {
+    display: none;
+}
 .content {
     width: 100%;
     height: 100vh;
 }
-
 .main-content {
     display: grid;
     justify-content: center;
@@ -24,7 +27,6 @@ html, body {
     gap: 15px; 
     margin-top: 10px;
 }
-
 .card {
     background-color: #fff;
     border-radius: 20px;
@@ -45,12 +47,12 @@ html, body {
 }
 
 .return-menu-btn {
-    width: 220px;
     border: none;
     background-color: #fff;
     color: #5843ed; 
     border-radius: 8px;
     padding: 10px 20px;
+    margin: 0 0 15px 0;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -116,7 +118,7 @@ html, body {
 .stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 13px;
+    grid-gap: 20px;
 }
 .stats-2  {
     display: grid;
@@ -154,6 +156,9 @@ html, body {
 .stat.first img {
     width: 50px;
     height: 50px;
+}
+.stat.third {
+    width: 195px;
 }
 .stat.third.med-sign {
     display: flex;
@@ -308,4 +313,194 @@ html, body {
     height: 200px;
     border-radius: 20px;
 }
-  
+
+@media (max-width: 992px) {
+    .card {
+        min-width: 200px;
+        min-height: 170px;
+    }
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+    .emp-info-title {
+        font-size: 10px;
+    }
+    .emp-info-content {
+        font-size: 12px;  
+        max-width: 200px;
+    }
+    .emp-info-title.position {
+        max-width: 150px;
+        width: auto;
+    }
+    .stats {
+        margin-left: 2px;
+        grid-gap: 10px; 
+    }
+    .stat {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        height: 60px; 
+        width: 200px;
+    }
+    .stat.first img,
+    .stat.second img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .photomaterials-container {
+        height: 200px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .photomaterials-container button {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+    .photomaterials-container h2 {
+        font-size: 20px;
+    }
+    .photos-holder img {
+        width: 170px;
+        height: 170px;
+    }
+    .splide li {
+        display: flex;
+        justify-content: center;
+    }
+    .splide {
+        width: 190px;
+    }
+    .stat.third {
+        width: 185px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .navbar-sidebar {
+        display: block;
+    }
+    .return-menu-btn {
+        padding: 7px 13px;
+        font-size: 14px;
+    }
+    .row.first {
+        display: flex;
+        justify-content: center;
+    }
+    .row.first .stats {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .photos-holder {
+        width: 500px;
+    }
+    .stats-2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 15px;   
+    }
+    .stat.third {
+        width: 165px;
+    }
+    .stat.third.med-sign .label {
+        width: 80px;
+    }
+    .stat.third.worker-sign img {
+        width: 60px;
+        height: 35px;
+    }
+    .stat.third.med-sign .info span {
+        display: inline-block; 
+        width: 50px; 
+        white-space: normal;
+        font-size: 10px
+    }
+    .stat.third .label {
+        font-size: 10px;
+    }
+    .stat.third .value {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 431px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .return-menu-btn {
+        margin-left: 165px;
+    }
+    .row.first .stats {
+        margin-left: 14px;
+    }
+    .stat {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 10px;
+        height: 60px; 
+        width: 180px;
+    } 
+    .row.first .card {
+        width: 300px;
+        margin-left: 75px;
+    }
+    .photos-holder {
+        margin-left: 4px;
+        width: 400px;
+        height: 200px;
+    }
+    .photos-holder img {
+        width: 140px;
+        height: 140px;
+    }
+    .photomaterials-container {
+        margin-top: 10px;
+    }
+    .photomaterials-container p {
+        font-size: 13px;
+    }
+    .photomaterials-container button {
+        padding: 9px 14px;
+        font-size: 12px;
+    }
+    .splide {
+        width: 170px;
+    }
+    .stats-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 15px;   
+    }
+    .stat.third {
+        width: 250px;
+        margin-left: 85px;
+        height: 80px;
+    }
+    .stat.third.med-sign .info span {
+        display: inline-block; 
+        width: 80px; 
+        white-space: normal;
+        font-size: 13px;
+    }
+    .stat.third .label {
+        font-size: 13px;
+        margin-right: 22px;
+    }
+    .stat.third .value {
+        font-size: 20px;    
+    }
+}

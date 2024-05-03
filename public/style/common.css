@@ -12,39 +12,19 @@ main {
     background-color: #F7F9FC;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: transparent;
+.navbar {
     background-color: #fff;
 }
-.go-to-main {
-    flex: 1;
+.navbar button {
+    padding: 0;
+    border: none;
 }
-.go-to-main a {
-    text-decoration: none;
-    border: 1px solid #ccc;
-    background-color: #F7F9FC;
-    color: #5843ed; 
-    border-radius: 10px;
-    padding: 7px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.2s;
+.navbar button svg {
+    margin: 0;
+    width: 25px;
+    height: 20px;
 }
-.go-to-main a:hover {
-    background-color: #5843ed;
-    color: #F7F9FC;
-}
-.right-content {
-    display: flex;
-    align-items: center;
-}
-.search-container, .settings, .avatar {
+.search-container, .avatar {
     display: flex;
     position: relative;
     align-items: center;
@@ -195,4 +175,11 @@ header {
 .btn-exit img,
 .sidebar img {
     margin-right: 8px;
+}
+@media (max-width: 500px) {
+    .search-avatar-container {
+        position: static; /* Reset position for mobile view */
+        width: 100%; /* Full width in mobile view */
+        order: 1; /* Ensure it's placed at the top in mobile layout */
+    }
 }

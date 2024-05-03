@@ -110,149 +110,248 @@
         </aside>
         
         <div class="content">
-            <header>
-                <div class="go-to-main">
-                </div>
-                <div class="right-content">
-                    <div class="search-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                        </svg>
-                        <input type="search" class="search-box" placeholder="Поиск">
-                    </div>
-                    <div class="avatar">
-                        <img src="../public/images/avatar.png" alt="ava">
-                        <div class="dropdown-menu" style="display: none;">
-                            <button>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_296_3724)">
-                                    <path d="M11 7L9.6 8.4L12.2 11H2V13H12.2L9.6 15.6L11 17L16 12L11 7ZM20 19H12V21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H12V5H20V19Z" fill="#A3AED0"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_296_3724">
-                                    <rect width="24" height="24" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                <span>Выйти</span>
-                            </button>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="35" height="29" viewBox="0 0 35 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2H33.25" stroke="#718EBF" stroke-width="3.125" stroke-linecap="round"/>
+                        <path d="M2 14.5H33.25" stroke="#718EBF" stroke-width="3.125" stroke-linecap="round"/>
+                        <path d="M2 27H33.25" stroke="#718EBF" stroke-width="3.125" stroke-linecap="round"/>
+                    </svg>
+                </button>
+        
+                  <div class="collapse navbar-collapse search-avatar-container justify-content-end" id="navbarSupportedContent">
+                    <form class="d-flex justify-content-center" role="search">
+                        <div class="search-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                            <input type="search" class="search-box" placeholder="Поиск">
                         </div>
-                    </div>
+                        <div class="avatar">
+                            <img src="../public/images/avatar.png" alt="ava">
+                        </div>
+                    </form>
+                    <aside class="navbar-sidebar">
+                        <nav class="nav flex-column">
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#citiesMenu" aria-expanded="false">
+                                <img src="../public/images/city-icon.png" alt="city-icon"> <span>Города</span>
+                            </a>
+                            <div class="collapse" id="citiesMenu">
+                                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#astanaOrgs" aria-expanded="false">
+                                    <img src="../public/images/city-icon.png" alt="city-icon"> <span>Астана</span>
+                                </a>
+                                <div class="collapse" id="astanaOrgs">
+                                    <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#org1Branches" aria-expanded="false">
+                                        <img src="../public/images/organizatin-icon.png" alt="city-icon"> <span>Организация 1</span>
+                                    </a>
+                                    <div class="collapse" id="org1Branches">
+                                        <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#branch1Depts" aria-expanded="false">
+                                            <img src="../public/images/branch-icon.png" alt="city-icon"> <span>Филиал 1</span>
+                                        </a>
+                                        <div class="collapse" id="branch1Depts">
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 1</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 2</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 3</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="org1Branches">
+                                        <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#branch2Depts" aria-expanded="false">
+                                            <img src="../public/images/branch-icon.png" alt="city-icon"><span>Филиал 2</span>
+                                        </a>
+                                        <div class="collapse" id="branch2Depts">
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 1</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 2</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 3</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="org1Branches">
+                                        <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#branch3Depts" aria-expanded="false">
+                                            <img src="../public/images/branch-icon.png" alt="city-icon"><span>Филиал 3</span>
+                                        </a>
+                                        <div class="collapse" id="branch3Depts">
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 1</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 2</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 3</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="astanaOrgs">
+                                    <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#org2Branches" aria-expanded="false">
+                                        <img src="../public/images/organizatin-icon.png" alt="city-icon">
+                                        <span>Организация по обработке металла тончайщего качества издели для обработки</span>
+                                    </a>
+                                    <div class="collapse" id="org2Branches">
+                                        <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#branch1Depts" aria-expanded="false">
+                                            <img src="../public/images/branch-icon.png" alt="city-icon"> <span>Филиал 1</span>
+                                        </a>
+                                        <div class="collapse" id="branch1Depts">
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 1</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 2</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 3</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="org2Branches">
+                                        <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#branch2Depts" aria-expanded="false">
+                                            <img src="../public/images/branch-icon.png" alt="city-icon"><span>Филиал 2</span>
+                                        </a>
+                                        <div class="collapse" id="branch2Depts">
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 1</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 2</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 3</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="org2Branches">
+                                        <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#branch3Depts" aria-expanded="false">
+                                            <img src="../public/images/branch-icon.png" alt="city-icon"><span>Филиал 3</span>
+                                        </a>
+                                        <div class="collapse" id="branch3Depts">
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 1</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 2</span></a>
+                                            <a class="nav-link inner" href="#"><img src="../public/images/department-icon.png" alt="city-icon"><span>Отдел 3</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#almatyOrgs" aria-expanded="false">
+                                    <img src="../public/images/city-icon.png" alt="city-icon"> <span>Алматы</span>
+                                </a>
+                                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#shymkentOrgs" aria-expanded="false">
+                                    <img src="../public/images/city-icon.png" alt="city-icon"> <span>Шымкент</span>
+                                </a>
+                                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#atyrauOrgs" aria-expanded="false">
+                                    <img src="../public/images/city-icon.png" alt="city-icon"> <span>Атырау</span>
+                                </a>
+                                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="aktauOrgs" aria-expanded="false">
+                                    <img src="../public/images/city-icon.png" alt="city-icon"> <span>Актау</span>
+                                </a>
+                                <a class="nav-link collapsed inner" href="#" data-bs-toggle="collapse" data-bs-target="#tarazOrgs" aria-expanded="false">
+                                    <img src="../public/images/city-icon.png" alt="city-icon"> <span>Тараз</span>
+                                </a>
+                            </div>
+                        </nav>
+                    </aside>
                 </div>
-            </header>
+                </div>
+              </nav>
             <main class="main-content">  
-                <button class="return-menu-btn">Вернуться в меню</button>
-                <div class="cards-container">
-                    <div class="card">
-                        <img class="profile-img" src="/public/images/sherlock.png" alt="sherlock">
-                        <h1 class="name">Курмангазы</h1>
-                        <p class="location">London, Britain</p>
-                        <div class="details">
-                            <div class="col">
-                                <span class="emp-info-title id">ID</span>
-                                <span class="emp-info-content">28</span>
-                            </div>
-                            <div class="col">
-                                <div>
-                                    <p class="emp-info-title position">Должность</p>
-                                    <p class="emp-info-content position">Заместитель </p>
+                <div class="container">
+                    <button class="return-menu-btn">Вернуться в меню</button>
+                    <div class="row first">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-5 col-xl-5">
+                            <div class="card">
+                                <img class="profile-img" src="/public/images/sherlock.png" alt="sherlock">
+                                <h1 class="name">Курмангазы</h1>
+                                <p class="location">London, Britain</p>
+                                <div class="details">
+                                    <div class="col">
+                                        <span class="emp-info-title id">ID</span>
+                                        <span class="emp-info-content">28</span>
+                                    </div>
+                                    <div class="col">
+                                        <p class="emp-info-title position">Должность</p>
+                                        <p class="emp-info-content position">Заместитель</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="emp-info-title organization">Организация</p>
+                                        <p class="emp-info-content">AVR Group</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div>
-                                    <p class="emp-info-title organization">Организация</p>
-                                    <p class="emp-info-content">AVR Group</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                            <div class="stats row">
+                                <div class="stat first">
+                                    <img src="/public/images/temperature.png" alt="temperature">
+                                    <div class="info">
+                                        <p class="label">Температура</p>
+                                        <p class="value">36,6</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="stats">
-                        <div class="stat first">
-                            <img src="/public/images/temperature.png" alt="temperature">
-                            <div class="info">
-                                <p class="label">Температура</p>
-                                <p class="value">36,6</p>
-                            </div>
-                        </div>
-                        <div class="stat first">
-                            <img src="/public/images/pulse.png" alt="pulse">
-                            <div class="info">
-                                <p class="label">Пульс</p>
-                                <p class="value">80</p>
-                            </div>
-                        </div>
-                        <div class="stat first">
-                            <div class="icon pressure-icon"></div>
-                            <div class="info">
-                                <p class="label">Давление</p>
-                                <p class="value">90/60</p>
-                            </div>
-                        </div>
-                        <div class="stat second">
-                            <img src="/public/images/alcometer.png" alt="temperature">
-                            <div class="info">
-                                <p class="label">Алкометр</p>
-                                <p class="value">1</p>
-                            </div>
-                        </div>
-                        <div class="stat second">
-                            <img src="/public/images/narcometer.png" alt="pulse">
-                            <div class="info">
-                                <p class="label">Наркометр</p>
-                                <p class="value">1</p>
-                            </div>
-                        </div>
-                        <div class="stat second complaint">
-                            <div class="info complaint">
-                                <p class="label">Жалобы</p>
-                                <p class="value">Да</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cards-container">
-                    <div class="photos-holder">
-                        <div class="photomaterials-container">
-                            <h2>Фотоматериалы</h2>
-                            <p>Фото 1</p>
-                            <p>Фото 2</p>
-                            <p>Фото 3</p>
-                            <button id="showAllImages">Смотреть полностью</button>
-                            <div class="popup-container" id="popupContainer">
-                                <div class="popup-content">
+                                <div class="stat first">
+                                    <img src="/public/images/pulse.png" alt="pulse">
+                                    <div class="info">
+                                        <p class="label">Пульс</p>
+                                        <p class="value">80</p>
+                                    </div>
                                 </div>
-                                <button class="close-btn" id="closePopup">Закрыть</button>
-                            </div>
-                        </div>
-                        <div class="photos">
-                            <div class="splide">
-                                <div class="splide__track">
-                                    <ul class="splide__list">
-                                        <li class="splide__slide"><img src="/public/images/photomaterial.png" alt="Slide 1"></li>
-                                        <li class="splide__slide"><img src="/public/images/photomaterial2.jpg" alt="Slide 2"></li>
-                                        <li class="splide__slide"><img src="/public/images/photomaterial3.jpg" alt="Slide 3"></li>
-                                    </ul>
+                                <div class="stat first">
+                                    <div class="icon pressure-icon"></div>
+                                    <div class="info">
+                                        <p class="label">Давление</p>
+                                        <p class="value">90/60</p>
+                                    </div>
+                                </div>
+                                <div class="stat second">
+                                    <img src="/public/images/alcometer.png" alt="temperature">
+                                    <div class="info">
+                                        <p class="label">Алкометр</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                </div>
+                                <div class="stat second">
+                                    <img src="/public/images/narcometer.png" alt="pulse">
+                                    <div class="info">
+                                        <p class="label">Наркометр</p>
+                                        <p class="value">1</p>
+                                    </div>
+                                </div>
+                                <div class="stat second complaint">
+                                    <div class="info complaint">
+                                        <p class="label">Жалобы</p>
+                                        <p class="value">Да</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="stats-2">
-                        <div class="stat third worker-sign">
-                            <p class="label">Подпись Работника</p>
-                            <div class="info">
-                                <img src="../public/images/emp-sign.png" alt="emp-sign">
+                    <div class="row second mt-4">
+                        <div class="col-6 col-sm-6 col-md-8 col-lg-8 col-xl-9">
+                            <div class="photos-holder">
+                                <div class="photomaterials-container">
+                                    <h2>Фотоматериалы</h2>
+                                    <p>Фото 1</p>
+                                    <p>Фото 2</p>
+                                    <p>Фото 3</p>
+                                    <button id="showAllImages">Смотреть полностью</button>
+                                    <div class="popup-container" id="popupContainer">
+                                        <div class="popup-content">
+                                        </div>
+                                        <button class="close-btn" id="closePopup">Закрыть</button>
+                                    </div>
+                                </div>
+                                <div class="photos">
+                                    <div class="splide">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide"><img src="/public/images/photomaterial.png" alt="Slide 1"></li>
+                                                <li class="splide__slide"><img src="/public/images/photomaterial2.jpg" alt="Slide 2"></li>
+                                                <li class="splide__slide"><img src="/public/images/photomaterial3.jpg" alt="Slide 3"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="stat third med-sign">
-                            <p class="label">Подпись медработника</p>
-                            <div class="info">
-                                <span>Не указан медработник</span>
-                            </div>
-                        </div>
-                        <div class="stat third complaint">
-                            <div class="info complaint">
-                                <p class="label">Статус</p>
-                                <p class="value">Допускается</p>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                            <div class="stats-2">
+                                <div class="stat third worker-sign">
+                                    <p class="label">Подпись Работника</p>
+                                    <div class="info">
+                                        <img src="../public/images/emp-sign.png" alt="emp-sign">
+                                    </div>
+                                </div>
+                                <div class="stat third med-sign">
+                                    <p class="label">Подпись медработника</p>
+                                    <div class="info">
+                                        <span>Не указан<br> медработник</span>
+                                    </div>
+                                </div>
+                                <div class="stat third complaint">
+                                    <div class="info complaint">
+                                        <p class="label">Статус</p>
+                                        <p class="value">Допускается</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
