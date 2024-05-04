@@ -138,7 +138,19 @@ html, body {
     height: 50px;
     margin-right: 10px; 
 }
-
+.stat.first .pressure {
+    background-color: #F4F7FE;
+    padding: 12px 8px 8px 12px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.stat.first .pressure-img {
+    width: 27px;
+    height: 25px;
+    margin: 0;
+}
 .stat .info {
     flex-grow: 1;
     text-align: left;
@@ -283,15 +295,19 @@ html, body {
 .popup-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: start;
     padding: 20px;
+    max-width: calc(100% - 40px);
 }
 
 .popup-content img {
-    margin: 10px;
-    max-width: 100%;
+    margin: 25px;
+    width: calc(25% - 10px);
     height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
 }
 
 .close-btn {
@@ -302,12 +318,6 @@ html, body {
     background-color: #fff;
     border: 1px solid #000;
     cursor: pointer;
-}
-.popup-content img {
-    margin: 10px;
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
 }
 
 @media (max-width: 992px) {
@@ -459,7 +469,7 @@ html, body {
         width: 400px;
         height: 200px;
     }
-    .photos-holder img {
+    .photos-holder .photos img {
         width: 140px;
         height: 140px;
     }
