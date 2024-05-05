@@ -1,0 +1,318 @@
+@import url(../style/common.css);
+
+@import url(../style/common.css);
+
+.content {
+    width: 100%;
+    height: 100vh;
+}
+.go-to-main {
+    background-color: #fff;
+    border: none;
+    width: 150px;
+    padding: 13px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 15px 0 0 20px;
+}
+.go-to-main a {
+    text-decoration: none;
+    color: #5843ed;
+    font-weight: 600;
+}
+.welcome {
+    margin: 20px 100px 80px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 33px;
+    color: #2B3674;
+    font-weight: 700;
+    word-wrap: break-word;  
+    white-space: normal;
+    min-width: 250px;
+}
+.table-responsive {
+    background-color: #F7F9FC;
+}
+.table-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.filter-box {
+    background-color: #fff; 
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: fit-content; 
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 5px 0 5px 0;
+    cursor: pointer;
+}
+.filter-box {
+    margin-right: 20px;
+}
+.edit-emp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit-emp button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit-emp img{
+    width: 25px;
+    height: 16px;
+    padding: 0;
+}
+.calendar-btn-box {
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: fit-content; 
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 9px 13px;
+    margin-left: 15px;
+    margin-right: 18px;
+}
+.filter-box span,
+.filter-box ul,
+.filter-box svg {
+    cursor: pointer;
+}
+.table-search-box {
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: fit-content; 
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+.table-search-box input {
+    border: none;
+}
+.search {
+    border-radius: 40px;
+    padding: 5px 25px 5px 45px; 
+    font-size: 16px;
+    background-color: #ffffff;
+    outline: none;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.table-search-box .shortcut {
+    margin-right: 5px;
+}
+.filter-box .filter,
+.table-search-box .search-icon {
+    margin: 0 10px 0;
+}
+.table-search-box .word-all,
+.table-search-box .shortcut-icon {
+    margin: 0 10px 0 0;
+}
+.filter-box .down-arrow {
+    margin: 0 10px 0 10px;
+}
+.table-responsive {
+    margin-top: 20px;
+}
+.table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    max-height: 500px;
+    overflow: auto;
+}
+.header-table, 
+.table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.table th,
+.table td {
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+.table .emp-position {
+    min-width: 200px;
+    white-space: normal;
+    word-wrap: break-word;
+    width: auto;
+    overflow: hidden;
+}
+.table .name {
+    max-width: 200px;
+    word-wrap: break-word;  
+    white-space: normal;
+}
+.emp-name-link {
+    text-decoration: none;
+}
+.table thead th {
+    background-color: transparent;
+    border-bottom: 2px solid #dee2e6; 
+}
+
+.table .name {
+    color: #5843ed;
+    font-size: 15px;
+    font-weight: 600;
+}
+.table .mobile-company-name,
+.table .mobile-emp-position {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+.table .mobile-emp-position {
+    color: #0c9242;
+}
+.table .company-name,
+.table .emp-position {
+    font-size: 14px;
+    font-weight: 500;
+}
+.table .company-name {
+    word-wrap: break-word;  
+    white-space: normal;
+    min-width: 200px;
+}
+.table .date {
+    font-size: 15px;
+    font-weight: 500;
+}
+.table .title {
+    color: #5A6376
+}
+.table .title span {
+    display: flex;
+    align-items: center;
+}
+.all, .all span, .allowed, .not-allowed {
+    font-size: 15px;
+}
+#filterLabel {
+    padding: 0 10px 0 0;
+}
+.all, .allowed, .not-allowed {
+    padding-right: 20px;
+}
+.selected-users span {
+    color: #5843ed;
+}
+.checkbox-row {
+    width: 20px;
+}
+.status-svg {
+    margin-left: 5px;
+}
+.date-icon {
+    margin-right: 5px;
+}
+
+/* table footer */
+
+.btn-arrow {
+    padding: 0 13px 3px 13px;
+    border-radius: 10px;
+    border: 1px solid #A1A9B8;
+    margin: 0;
+    text-align: center;
+    background: #F7F9FC;
+}
+
+tfoot tr {
+    padding: 10px 0;
+}
+tfoot span {
+    font-size: 13px;
+}
+tfoot .arrow-down {
+    margin-right: 10px;
+}
+
+/* calendar */
+
+.ui-datepicker-calendar .ui-datepicker-header {
+    text-align: center;
+}
+.ui-datepicker-calendar th.ui-datepicker-week-end,
+.ui-datepicker-calendar .ui-datepicker-week-end a {
+    color: red;
+}
+.ui-datepicker-calendar td {
+    border: none !important;
+}
+
+.ui-datepicker-calendar td a.ui-state-default {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.ui-datepicker .ui-datepicker-header {
+    background-color: transparent !important;
+    border: none !important; 
+    border-bottom: none !important; 
+}
+.calendar-btn-box {
+    padding: 8px;
+    cursor: pointer;
+}
+.calendar-btn-box button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+.calendar-btn-box button svg {
+    width: 18px;
+    height: 18px;
+}
+
+.mobile-company-name,
+.mobile-emp-position {
+    display: none;
+}
+@media (max-width: 992px) {
+    .navbar-sidebar {
+        display: block;
+    }
+    .sidebar, .company-name, .emp-position, .emp-comp-name-title, .emp-position-title {
+        display: none;
+    }
+    .mobile-company-name, .mobile-emp-position {
+        display: block;
+    }
+    .table {
+        width: 90%; 
+        margin-left: auto;
+        margin-right: auto;
+        font-size: smaller; 
+    }
+    .table .name {
+        max-width: 700px;
+        min-width: 500px;
+        word-wrap: normal;  
+        white-space: normal;
+    }
+    
+}
+@media (max-width: 768px) {
+    .table .name {
+        max-width: 700px;
+        min-width: 320px;
+        word-wrap: normal;  
+        white-space: normal;
+    }
+}
