@@ -13,8 +13,10 @@ html, body {
 .main-content {
     display: grid;
     justify-content: center;
-    margin-top: 15px;
     grid-gap: 15px;
+}
+.main-content .container {
+    width: 100%;
 }
 .cards-container {
     display: flex;
@@ -29,7 +31,7 @@ html, body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: none;
     min-width: 260px;
-    min-height: 230px;
+    min-height: 310px;
     width: auto;
     height: auto;
     text-align: center;
@@ -121,7 +123,7 @@ html, body {
     grid-gap: 13px;
 }
 .stats-2 .stat {
-    height: 70px;
+    height: 260px;
 }
 .stat {
     background-color: #fff;
@@ -132,6 +134,7 @@ html, body {
     padding: 10px;
     height: auto; 
     width: 220px;
+    height: 90px;
 }
 .stat img {
     width: 50px;
@@ -220,7 +223,7 @@ html, body {
     height: 200px;
 }
 .photomaterials-container {
-    height: 230px;
+    height: 260px;
     padding: 20px;
     display: flex;
     flex-direction: column;

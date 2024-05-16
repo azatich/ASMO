@@ -32,9 +32,6 @@
     white-space: normal;
     min-width: 250px;
 }
-.table-responsive {
-    background-color: #F7F9FC;
-}
 .table-search {
     display: flex;
     justify-content: center;

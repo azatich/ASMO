@@ -11,10 +11,9 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #F7F9FC;
 }
 .navbar {
-    background-color: #fff;
+    background-color: #F7F9FC;
 }
 .navbar button {
     padding: 0;
@@ -98,7 +97,7 @@ main {
 }
 
 .sidebar {
-    background-color: #fff;
+    background-color: #F7F9FC;
     width: 300px; 
     overflow-y: auto;
     padding: 15px;
@@ -106,12 +105,25 @@ main {
     flex-direction: column; 
     height: 100vh;
 }
+.sidebar .logo img {
+    width: 100%;
+}
 .employee-nav {
-    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #758CA3;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    padding: 10px 15px 10px 0;
+}
+.employee-nav:hover {
+    background-color: #e9ecef;
 }
 .employees-title {
     font-size: 15px;
     color: #A3AED0;
+    margin-left: 8px;
 }
 .sidebar .employees svg {
     margin-right: 10px;
@@ -125,6 +137,9 @@ main {
 .sidebar span {
     color: #A3AED0;
     font-size: 15px;
+}
+.navbar.navbar-expand-lg {
+    height: 93px;
 }
 .nav-link {
     position: relative;
